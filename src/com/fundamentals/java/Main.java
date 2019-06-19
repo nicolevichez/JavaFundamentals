@@ -6,13 +6,24 @@ package com.fundamentals.java;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
- System.out.println("Welcome to java");
-    House myHouse = new House();
-    myHouse.doorOpenClose();
+         lesson5Examples();
+    }
+
+    public static void lesson5Examples(){
+     Lesson5 myLesson5 = new Lesson5();
+     myLesson5.showLocalExample();
+     myLesson5.showLocalWithParameter(10,12);
+     int example = myLesson5.showLocalWithReturn(15,8);
+     System.out.println(example);
+     myLesson5.showInstanceVariable();
+     myLesson5.showConversion();
+    }
+
+    public static void houseExample() {
+        //System.out.println("Welcome to java");
+        House myHouse = new House();
+        myHouse.doorOpenClose();
 
     }
 }
-
-
 
